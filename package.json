@@ -1,0 +1,22 @@
+{
+  "name": "dao-onChain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@openzeppelin/contracts": "^4.7.3",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.3",
+    "@types/chai": "^4.3.3",
+    "@types/node": "^18.11.0",
+    "chain": "^0.4.0",
+    "ethers": "^5.7.1",
+    "hardhat": "^2.12.0",
+    "hardhat-deploy": "^0.11.18",
+    "ts-node": "^10.9.1",
+    "type": "^2.7.2",
+    "typechain": "^8.1.0",
+    "typescript": "^4.8.4"
+  }
+}
