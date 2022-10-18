@@ -9,14 +9,16 @@ const config: HardhatUserConfig = {
     networks: {
         hardhat: {
             chainId: 31337,
+            allowUnlimitedContractSize: true, // To large contract error (Only in testnet)
         },
 
         localhost: {
             chainId: 31337,
+            allowUnlimitedContractSize: true,
         },
     },
     solidity: {
-        compilers: [{ version: "0.8.17" }, { version: "0.8.0" }],
+        compilers: [{ version: "0.8.17" }, { version: "0.8.0" }, { version: "0.8.9" }],
     },
     namedAccounts: { deployer: { default: 0 } },
 }

@@ -24,31 +24,17 @@ contract GovernorContract is
         uint256 _votingDelay
     )
         Governor("GovernorContract")
-        GovernorSettings(
-            _votingDelay, /* 1 block */ // votind delay
-            _votingPeriod, // 45818, /* 1 week */ // voting period
-            0 // proposal threshold
-        )
+        GovernorSettings(_votingDelay, _votingPeriod, 0)
         GovernorVotes(_token)
         GovernorVotesQuorumFraction(_quorumPercentage)
         GovernorTimelockControl(_timelock)
     {}
 
-    function votingDelay()
-        public
-        view
-        override(IGovernor, GovernorSettings)
-        returns (uint256)
-    {
+    function votingDelay() public view override(IGovernor, GovernorSettings) returns (uint256) {
         return super.votingDelay();
     }
 
-    function votingPeriod()
-        public
-        view
-        override(IGovernor, GovernorSettings)
-        returns (uint256)
-    {
+    function votingPeriod() public view override(IGovernor, GovernorSettings) returns (uint256) {
         return super.votingPeriod();
     }
 

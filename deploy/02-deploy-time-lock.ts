@@ -1,10 +1,9 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types"
-import { ethers } from "hardhat"
 import { DeployFunction } from "hardhat-deploy/types"
 import { MIN_DELAY } from "../helper-hardhat-config"
 
 const deployTimeLock: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
-    const { getNamedAccounts, deployments, network } = hre
+    const { getNamedAccounts, deployments } = hre
     const { deploy, log } = deployments
     const { deployer } = await getNamedAccounts()
 
