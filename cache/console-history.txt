@@ -1,0 +1,3 @@
+await governor.state("65398125676558919061430490689665610495211022662441289131204819160559056858590")
+await governor
+    const governor = await ethers.getContract("GovernorContract")
